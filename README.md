@@ -5,26 +5,13 @@ This project analyzes user journey data to derive valuable insights into user be
 ## Table of Contents
 
 1. [Project Overview](#project-overview)
-2. [Setup](#setup)
-3. [Functions](#functions)
-4. [Example Usage](#example-usage)
-5. [Contributions](#contributions)
+2. [Functions](#functions)
+3. [Example Usage](#example-usage)
+4. [Setup](#setup)
 
 ## Project Overview
 
 This project is designed to help analyze user journeys from a website or application. It identifies frequent page visits, the most common sequences of page combinations, and calculates the average journey length. The analysis can be filtered based on user subscription plans (All, Monthly, Quarterly, Annual) to derive insights specific to different user segments.
-
-## Setup
-
-To run this project, you'll need to have Python installed, along with the following libraries:
-
-- pandas
-- warnings
-
-You can install these dependencies using pip:
-
-```bash
-pip install pandas
 
 ## Data
 
@@ -91,7 +78,7 @@ Calculates the average length of user journeys, defined by the number of pages v
 
 Returns a float representing the average journey length.
 
-Example Usage
+## Example Usage
 python
 Copy
 Edit
@@ -114,3 +101,15 @@ print(page_sequences(data, number_of_pages = 3, show_results = 10, plan = "All",
 
 # Check average journey length
 print(avg_journey_length(data, plan = "All"))
+
+## Setup
+
+To run this project, you'll need to have Python installed, along with the following libraries:
+
+- pandas
+- warnings
+
+You can install these dependencies using pip:
+
+  ```bash
+  pip install pandas
